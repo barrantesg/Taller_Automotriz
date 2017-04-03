@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{146CC9E2-5D4E-4F7B-9A02-541964EAB081}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaAutomotriz</RootNamespace>
+    <AssemblyName>SistemaAutomotriz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\Downloads\C5\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\Downloads\C5\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\AccesoDatosPostgre.cs" />
+    <Compile Include="DAO\ClienteD.cs" />
+    <Compile Include="DAO\EmpleadoD.cs" />
+    <Compile Include="DAO\MarcaD.cs" />
+    <Compile Include="DAO\ModeloD.cs" />
+    <Compile Include="DAO\PuestoD.cs" />
+    <Compile Include="DAO\PuestoEmpleado.cs" />
+    <Compile Include="DAO\ReparacionD.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="Entidades\Marca.cs" />
+    <Compile Include="Entidades\Modelo.cs" />
+    <Compile Include="Entidades\Puesto.cs" />
+    <Compile Include="Entidades\Reparacion.cs" />
+    <Compile Include="GUI\FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEdiClasesVehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEdiClasesVehiculos.Designer.cs">
+      <DependentUpon>FrmEdiClasesVehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEdiCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEdiCliente.Designer.cs">
+      <DependentUpon>FrmEdiCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEdiMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEdiMarca.Designer.cs">
+      <DependentUpon>FrmEdiMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEdiModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEdiModelo.Designer.cs">
+      <DependentUpon>FrmEdiModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmEdiVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmEdiVehiculo.Designer.cs">
+      <DependentUpon>FrmEdiVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMarca.Designer.cs">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmMarcaModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMarcaModelo.Designer.cs">
+      <DependentUpon>FrmMarcaModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmModelo.Designer.cs">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\RegistroEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RegistroEmpleado.Designer.cs">
+      <DependentUpon>RegistroEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\RegistroReparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RegistroReparacion.Designer.cs">
+      <DependentUpon>RegistroReparacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TablaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TablaEmpleados.Designer.cs">
+      <DependentUpon>TablaEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TablaReparaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\TablaReparaciones.Designer.cs">
+      <DependentUpon>TablaReparaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEdiClasesVehiculos.resx">
+      <DependentUpon>FrmEdiClasesVehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEdiCliente.resx">
+      <DependentUpon>FrmEdiCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEdiMarca.resx">
+      <DependentUpon>FrmEdiMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEdiModelo.resx">
+      <DependentUpon>FrmEdiModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmEdiVehiculo.resx">
+      <DependentUpon>FrmEdiVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmMarca.resx">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmMarcaModelo.resx">
+      <DependentUpon>FrmMarcaModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmModelo.resx">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RegistroEmpleado.resx">
+      <DependentUpon>RegistroEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RegistroReparacion.resx">
+      <DependentUpon>RegistroReparacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TablaEmpleados.resx">
+      <DependentUpon>TablaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\TablaReparaciones.resx">
+      <DependentUpon>TablaReparaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\123_-Edit_Car_Details-_transport_vehicle-128-ConvertImage.ico" />
+    <Content Include="Resources\1486506487_refresh.png" />
+    <Content Include="Resources\1486712585_trash_bin.png" />
+    <Content Include="Resources\1486712785_user_profile_edit.png" />
+    <Content Include="Resources\1486713005_add_user.png" />
+    <Content Include="Resources\1489014575_BT_c3tool.ico" />
+    <Content Include="Resources\1489014601_BT_c3angle.ico" />
+    <Content Include="Resources\1489017275_logout.ico" />
+    <Content Include="Resources\1489022383_magnifier_and_car.ico" />
+    <Content Include="Resources\1489022924_Folder_Mac_Utilities.ico" />
+    <Content Include="Resources\1489291404_icon-136-document-edit.ico" />
+    <Content Include="Resources\1489309838_circle-add-plus-new-glyph.ico" />
+    <Content Include="Resources\1489309881_edit2.ico" />
+    <Content Include="Resources\1489455956_cancel.ico" />
+    <Content Include="Resources\2_Jan-27-128-ConvertImage.ico" />
+    <Content Include="Resources\405442_634x357.jpg" />
+    <Content Include="Resources\5-year-warrantyES.jpg.ximg.l_full_m.smart.jpg" />
+    <Content Include="Resources\banner-nuevos.png" />
+    <Content Include="Resources\bmw-car-sign-round-label-brand-auto-128.png" />
+    <Content Include="Resources\Calebamesbury-Classic-American-Cars-Muscle-Car-Chevrolet-Camaro-SS.ico" />
+    <Content Include="Resources\catalog-128-ConvertImage.ico" />
+    <Content Include="Resources\clientes.png" />
+    <Content Include="Resources\collage.jpg" />
+    <Content Include="Resources\Daperton_Group_Alquila_con_confirmacion_de_Marca_y_modelo_de_vehiculo.png" />
+    <Content Include="Resources\login-header.jpg" />
+    <Content Include="Resources\MTS-950_DrapeBG_03_1600x1200.jpg" />
+    <Content Include="Resources\spare-parts-engine-app-application-128.png" />
+    <Content Include="Resources\taller-mecanico.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

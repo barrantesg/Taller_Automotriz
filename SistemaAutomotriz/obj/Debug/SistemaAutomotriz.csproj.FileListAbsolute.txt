@@ -1,0 +1,26 @@
+C:\Users\Dayánn BG\Documents\Proyecto Mainor 2017\httpsgitlab.com\Krysbell18\Automotriz.git\SistemaAutomotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.exe.config
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmCliente.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmEdiClasesVehiculos.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmEdiCliente.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmEdiMarca.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmEdiModelo.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmEdiVehiculo.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmMarca.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmMarcaModelo.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmModelo.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.InicioSesion.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\frmFramesProyecto.Vista.FrmRegistro.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.RegistroEmpleado.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.RegistroReparacion.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.TablaEmpleados.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.TablaReparaciones.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.Properties.Resources.resources
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.csproj.GenerateResource.Cache
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.exe.config
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.exe
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.pdb
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\bin\Debug\Mono.Security.dll
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\bin\Debug\Npgsql.dll
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.exe
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.pdb
+C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.csprojResolveAssemblyReference.cache
