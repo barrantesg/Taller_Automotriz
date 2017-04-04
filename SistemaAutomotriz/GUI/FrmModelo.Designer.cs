@@ -1,4 +1,4 @@
-﻿namespace frmFramesProyecto.Vista
+﻿namespace GUI
 {
     partial class FrmModelo
     {
@@ -56,7 +56,7 @@
             // tpNuevo
             // 
             this.tpNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-           // this.tpNuevo.Image = global::SistemaAutomotriz.Properties.Resources._1489309838_circle_add_plus_new_glyph;
+            this.tpNuevo.Image = global::SistemaAutomotriz.Properties.Resources.circle_add_plus_new_glyph;
             this.tpNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tpNuevo.Name = "tpNuevo";
             this.tpNuevo.Size = new System.Drawing.Size(23, 22);
@@ -66,7 +66,7 @@
             // tpEditar
             // 
             this.tpEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            //this.tpEditar.Image = global::SistemaAutomotriz.Properties.Resources._1489309881_edit2;
+            this.tpEditar.Image = global::SistemaAutomotriz.Properties.Resources.edit2;
             this.tpEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tpEditar.Name = "tpEditar";
             this.tpEditar.Size = new System.Drawing.Size(23, 22);

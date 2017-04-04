@@ -1,4 +1,4 @@
-﻿namespace frmFramesProyecto.Vista
+﻿namespace GUI
 {
     partial class FrmCliente
     {

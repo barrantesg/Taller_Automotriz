@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Entidad
+namespace Entidades
 {
     public class Cliente
     {
@@ -19,7 +19,8 @@ namespace Entidad
         private string cel;
         private string fax;
         private string direccion;
-       
+
+        //private Cliente oCliente;
 
         //constructores
         public Cliente(string pCed, string pNombre, string pApe1, string pApe2, string pTel_ofi, string pTel_casa, string pCel, string pFax, string pDireccion)
@@ -41,6 +42,11 @@ namespace Entidad
             this.ape1 = pApe1;
             this.ape2 = pApe2;
             this.cel = pCel;
+        }
+
+        public Cliente(string pCed)
+        {
+            this.ced = pCed;
         }
 
         //metodos set y get
@@ -74,7 +80,7 @@ namespace Entidad
             set { tel_ofi = value; }
         }
 
-        public string  Tel_casa
+        public string Tel_casa
         {
             get { return tel_casa; }
             set { tel_casa = value; }
@@ -101,7 +107,8 @@ namespace Entidad
         //retornar datos de cliente
         public override string ToString()
         {
-            return this.nombre+" "+this.ape1+" "+this.ape2;
+            //return this.nombre+" "+this.ape1+" "+this.ape2;
+            return this.ced;
         }
     }
 }

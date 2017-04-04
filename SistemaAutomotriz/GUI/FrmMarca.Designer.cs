@@ -1,4 +1,4 @@
-﻿namespace frmFramesProyecto.Vista
+﻿namespace GUI
 {
     partial class FrmMarca
     {
@@ -73,7 +73,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.Image = global::SistemaAutomotriz.Properties.Resources.edit2;
             this.btnEditar.Location = new System.Drawing.Point(66, 35);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(54, 46);
@@ -83,7 +83,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.Image = global::SistemaAutomotriz.Properties.Resources.circle_add_plus_new_glyph;
             this.btnAgregar.Location = new System.Drawing.Point(6, 35);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(54, 46);

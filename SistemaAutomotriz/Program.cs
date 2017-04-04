@@ -1,5 +1,5 @@
-﻿using Datos;
-using frmFramesProyecto.Vista;
+﻿using DAO;
+using GUI;
 using SistemaAutomotriz.GUI;
 using System;
 using System.Collections.Generic;

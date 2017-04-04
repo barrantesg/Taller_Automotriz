@@ -1,4 +1,4 @@
-﻿namespace frmFramesProyecto.Vista
+﻿namespace GUI
 {
     partial class FrmRegistro
     {
@@ -30,16 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistro));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnClases = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnEmpleado = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnReparacion = new System.Windows.Forms.Button();
             this.btnVehiculo = new System.Windows.Forms.Button();
-            this.btnClases = new System.Windows.Forms.Button();
+            this.btnRepuesto = new System.Windows.Forms.Button();
             this.btnMarcaModelo = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -53,25 +55,46 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.btnClases);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button5);
+            this.groupBox1.Controls.Add(this.btnEmpleado);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.btnReparacion);
             this.groupBox1.Controls.Add(this.btnVehiculo);
-            this.groupBox1.Controls.Add(this.btnClases);
+            this.groupBox1.Controls.Add(this.btnRepuesto);
             this.groupBox1.Controls.Add(this.btnMarcaModelo);
             this.groupBox1.Controls.Add(this.btnCliente);
             this.groupBox1.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(301, 53);
+            this.groupBox1.Location = new System.Drawing.Point(88, 53);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(289, 268);
+            this.groupBox1.Size = new System.Drawing.Size(502, 268);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Parámetros:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Book Antiqua", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(310, 30);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(175, 17);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Registro de Clases Vehículos";
+            // 
+            // btnClases
+            // 
+            this.btnClases.Image = global::SistemaAutomotriz.Properties.Resources._1489014322_run;
+            this.btnClases.Location = new System.Drawing.Point(262, 23);
+            this.btnClases.Name = "btnClases";
+            this.btnClases.Size = new System.Drawing.Size(42, 32);
+            this.btnClases.TabIndex = 15;
+            this.btnClases.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -124,6 +147,17 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Registro de Marcas/Modelos";
             // 
+            // btnEmpleado
+            // 
+            this.btnEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleado.Image")));
+            this.btnEmpleado.Location = new System.Drawing.Point(23, 61);
+            this.btnEmpleado.Name = "btnEmpleado";
+            this.btnEmpleado.Size = new System.Drawing.Size(42, 35);
+            this.btnEmpleado.TabIndex = 4;
+            this.btnEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnEmpleado.UseVisualStyleBackColor = true;
+            this.btnEmpleado.Click += new System.EventHandler(this.button5_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -134,26 +168,15 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Registro de Clientes";
             // 
-            // button6
+            // btnReparacion
             // 
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(23, 215);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(42, 35);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button5
-            // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(23, 61);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(42, 35);
-            this.button5.TabIndex = 4;
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnReparacion.Image = ((System.Drawing.Image)(resources.GetObject("btnReparacion.Image")));
+            this.btnReparacion.Location = new System.Drawing.Point(23, 215);
+            this.btnReparacion.Name = "btnReparacion";
+            this.btnReparacion.Size = new System.Drawing.Size(42, 35);
+            this.btnReparacion.TabIndex = 5;
+            this.btnReparacion.UseVisualStyleBackColor = true;
+            this.btnReparacion.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnVehiculo
             // 
@@ -165,15 +188,15 @@
             this.btnVehiculo.UseVisualStyleBackColor = true;
             this.btnVehiculo.Click += new System.EventHandler(this.btnVehiculo_Click);
             // 
-            // btnClases
+            // btnRepuesto
             // 
-            this.btnClases.Image = ((System.Drawing.Image)(resources.GetObject("btnClases.Image")));
-            this.btnClases.Location = new System.Drawing.Point(23, 177);
-            this.btnClases.Name = "btnClases";
-            this.btnClases.Size = new System.Drawing.Size(42, 32);
-            this.btnClases.TabIndex = 2;
-            this.btnClases.UseVisualStyleBackColor = true;
-            this.btnClases.Click += new System.EventHandler(this.btnClases_Click);
+            this.btnRepuesto.Image = ((System.Drawing.Image)(resources.GetObject("btnRepuesto.Image")));
+            this.btnRepuesto.Location = new System.Drawing.Point(23, 177);
+            this.btnRepuesto.Name = "btnRepuesto";
+            this.btnRepuesto.Size = new System.Drawing.Size(42, 32);
+            this.btnRepuesto.TabIndex = 2;
+            this.btnRepuesto.UseVisualStyleBackColor = true;
+            this.btnRepuesto.Click += new System.EventHandler(this.btnClases_Click);
             // 
             // btnMarcaModelo
             // 
@@ -202,7 +225,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(636, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(633, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -229,7 +252,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 353);
+            this.ClientSize = new System.Drawing.Size(633, 353);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -258,13 +281,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnReparacion;
+        private System.Windows.Forms.Button btnEmpleado;
         private System.Windows.Forms.Button btnVehiculo;
-        private System.Windows.Forms.Button btnClases;
+        private System.Windows.Forms.Button btnRepuesto;
         private System.Windows.Forms.Button btnMarcaModelo;
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnClases;
     }
 }

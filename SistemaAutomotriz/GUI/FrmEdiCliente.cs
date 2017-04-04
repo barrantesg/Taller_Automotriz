@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidad;
+using Entidades;
 
 
-namespace frmFramesProyecto.Vista
+namespace GUI
 {
     public partial class FrmEdiCliente : Form
     {

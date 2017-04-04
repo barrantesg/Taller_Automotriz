@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Datos;
-using Entidad;
+using DAO;
+using Entidades;
 
-namespace frmFramesProyecto.Vista
+namespace GUI
 {
     public partial class FrmModelo : Form
     {

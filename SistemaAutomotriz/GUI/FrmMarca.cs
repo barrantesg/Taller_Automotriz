@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
-using Datos;
-using Entidad;
+using DAO;
+using Entidades;
 
-namespace frmFramesProyecto.Vista
+namespace GUI
 {
     public partial class FrmMarca : Form
     {
@@ -24,6 +24,7 @@ namespace frmFramesProyecto.Vista
             this.refrescarGrid();
         }
 
+        //refrescar grid
         private void refrescarGrid()
         {
             bool estado = true;
@@ -47,7 +48,8 @@ namespace frmFramesProyecto.Vista
                 {
                     this.refrescarGrid();
                     MessageBox.Show("Marca agregada satisfactoriamente");
-                }else
+                }
+                else
                 {
                     MessageBox.Show("Error agregando la marca: " + oMarcaD.Error, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -64,7 +66,8 @@ namespace frmFramesProyecto.Vista
             {
                 this.refrescarGrid();
                 MessageBox.Show("Marca borrada");
-            }else
+            }
+            else
             {
                 MessageBox.Show("Error eliminando la marca: " + oMarcaD.Error, "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -86,12 +89,14 @@ namespace frmFramesProyecto.Vista
                 {
                     this.refrescarGrid();
                     MessageBox.Show("Marca editada satisfactoriamente");
-                }else
+                }
+                else
                 {
                     MessageBox.Show("Error editando la marca: " + oMarcaD.Error, "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
+            
+             }
         }
     }
 }

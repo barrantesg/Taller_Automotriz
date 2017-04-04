@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
 using NpgsqlTypes;
-using Datos;
-using Entidad;
+using DAO;
+using Entidades;
 
-namespace frmFramesProyecto.Vista
+namespace GUI
 {
     public partial class FrmEdiClasesVehiculos : Form
     {

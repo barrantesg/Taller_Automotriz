@@ -121,6 +121,16 @@ namespace SistemaAutomotriz.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1489014322_run {
+            get {
+                object obj = ResourceManager.GetObject("1489014322_run", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
         internal static System.Drawing.Icon _1489014575_BT_c3tool {
@@ -353,16 +363,6 @@ namespace SistemaAutomotriz.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
-        internal static System.Drawing.Icon _1489309881_edit2 {
-            get {
-                object obj = ResourceManager.GetObject("_1489309881_edit2", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
-        /// </summary>
         internal static System.Drawing.Icon _1489309881_edit21 {
             get {
                 object obj = ResourceManager.GetObject("_1489309881_edit21", resourceCulture);
@@ -523,6 +523,16 @@ namespace SistemaAutomotriz.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circle_add_plus_new_glyph {
+            get {
+                object obj = ResourceManager.GetObject("circle-add-plus-new-glyph", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clientes {
             get {
                 object obj = ResourceManager.GetObject("clientes", resourceCulture);
@@ -546,6 +556,16 @@ namespace SistemaAutomotriz.Properties {
         internal static System.Drawing.Bitmap Daperton_Group_Alquila_con_confirmacion_de_Marca_y_modelo_de_vehiculo {
             get {
                 object obj = ResourceManager.GetObject("Daperton_Group_Alquila_con_confirmacion_de_Marca_y_modelo_de_vehiculo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit2 {
+            get {
+                object obj = ResourceManager.GetObject("edit2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

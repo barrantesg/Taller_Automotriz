@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidad;
+using Entidades;
 using Npgsql;
 using NpgsqlTypes;
 using System.Data;
-namespace Datos
+
+namespace DAO
 {
     public class MarcaD
     {
@@ -22,7 +23,7 @@ namespace Datos
         public MarcaD(AccesoDatosPostgre pConexion)
         {
             this.conexion = pConexion;
-            this.error="";
+            this.error = "";
         }
 
         //agregar a marca
@@ -32,11 +33,11 @@ namespace Datos
             this.error = "";
             try
             {
-                string sql = "insert into marca(id, descripcion) values (@marca,@descripcion)";
+                string sql = "insert into marca(marca, descripcion) values (@marca,@descripcion)";
                 NpgsqlParameter[] parametros = new NpgsqlParameter[2];
 
                 parametros[0] = new NpgsqlParameter();
-                parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                 parametros[0].ParameterName = "@marca";
                 parametros[0].Value = pMarca.CodigoMarca;
 
@@ -83,7 +84,7 @@ namespace Datos
             }
             return marcas;
         }
-        
+
         //eliminar datos de tabla marca
         public bool eliminaMarca(Marca pMarca)
         {
@@ -92,11 +93,11 @@ namespace Datos
             this.error = "";
             try
             {
-                string sql = "delete from marca where id=@marca";
+                string sql = "delete from marca where marca=@marca";
                 NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
                 parametros[0] = new NpgsqlParameter();
-                parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                 parametros[0].ParameterName = "@marca";
                 parametros[0].Value = pMarca.CodigoMarca;
 
@@ -124,12 +125,12 @@ namespace Datos
             try
             {
 
-                string sql = "update marca set id=@marca, descripcion=@descripcion where id= @marca";
+                string sql = "update marca set marca=@marca, descripcion=@descripcion where marca= @marca";
 
                 NpgsqlParameter[] parametros = new NpgsqlParameter[2];
 
                 parametros[0] = new NpgsqlParameter();
-                parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                 parametros[0].ParameterName = "@marca";
                 parametros[0].Value = pMarca.CodigoMarca;
 

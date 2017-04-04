@@ -25,5 +25,26 @@ C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\Sist
 C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.pdb
 C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.csprojResolveAssemblyReference.cache
 C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.exe.config
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.exe
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.pdb
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.csprojResolveAssemblyReference.cache
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmCliente.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmEdiClasesVehiculos.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmEdiCliente.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmEdiMarca.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmEdiModelo.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmEdiVehiculo.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmMarca.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmMarcaModelo.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmModelo.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmOrdenTrabajo.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.InicioSesion.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\GUI.FrmRegistro.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.RegistroEmpleado.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.RegistroReparacion.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.TablaEmpleados.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.GUI.TablaReparaciones.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.Properties.Resources.resources
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.csproj.GenerateResource.Cache
 C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.exe
 C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.pdb

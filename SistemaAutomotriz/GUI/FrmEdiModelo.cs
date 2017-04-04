@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Datos;
-using Entidad;
+using DAO;
+using Entidades;
 
-namespace frmFramesProyecto.Vista
+namespace GUI
 {
     public partial class FrmEdiModelo : Form
     {
@@ -24,13 +24,23 @@ namespace frmFramesProyecto.Vista
             get { return aceptar; }
         }
 
-        //constructor
+        //constructores
+
         public FrmEdiModelo(AccesoDatosPostgre pCnx)
         {
             InitializeComponent();
             this.cnx = pCnx;
             this.aceptar = false;
             this.llenarComboMarca();
+        }
+
+        public FrmEdiModelo(string pId, string pMarca, string pDesc)
+        {
+            InitializeComponent();
+            this.aceptar = false;
+            this.txtCod.Text = pId;
+            this.comboMarca.Text = pMarca;
+            this.txtDescripcion.Text = pDesc;
         }
 
         //llenar el combobox con las marcas
@@ -47,31 +57,28 @@ namespace frmFramesProyecto.Vista
 
         }
 
-
-        public string cualMarca
-        {
-            get { return this.comboMarca.SelectedItem.ToString(); }
-        }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if ((this.txtDescripcion.Text == "")||
-                (this.comboMarca.Text==""))
+            if ((this.txtCod.Text == "") ||
+               (this.txtDescripcion.Text == "") ||
+               (this.comboMarca.Text == ""))
             {
                 MessageBox.Show("Debe llenar todos los datos requeridos",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
             else
             {
                 this.aceptar = true;
-                //Marca oMarca = (Marca)this.comboMarca.SelectedItem;
-                //Modelo oModelo = new Modelo(this.txtCod.Text, oMarca, this.txtDescripcion.Text);
-                
-                //MessageBox.Show("Datos almacenados exitosamente");
+                Marca marcaX = (Marca)this.comboMarca.SelectedItem;
+                Modelo oModelo = new Modelo(this.txtCod.Text, marcaX.CodigoMarca, this.txtDescripcion.Text);
+                ModeloD oModeloD = new ModeloD(this.cnx);
+                oModeloD.agregarModelo(oModelo);
+
+                MessageBox.Show("Datos almacenados exitosamente", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
-    }
+        }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -83,22 +90,10 @@ namespace frmFramesProyecto.Vista
 
         }
 
-     
 
-        /*
         public Modelo getModelo()
         {
-            Marca oMarca = (Marca)this.comboMarca.SelectedItem;
-            string aux = Convert.ToString(oMarca);
-            return new Modelo(this.txtCod.Text, aux, this.txtDescripcion.Text);
-            //Modelo oModelo = new Modelo(this.txtCod.Text, oMarca, this.txtDescripcion.Text);
-            // return oModelo;
-
-        }
-        */
-        public Modelo getModelo()
-        {
-            return new Modelo("0", this.comboMarca.Text, this.txtDescripcion.Text);
+            return new Modelo(this.txtCod.Text, this.comboMarca.Text, this.txtDescripcion.Text);
         }
     }
 }

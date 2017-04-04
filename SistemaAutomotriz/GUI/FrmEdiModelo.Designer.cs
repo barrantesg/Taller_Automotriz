@@ -1,4 +1,4 @@
-﻿namespace frmFramesProyecto.Vista
+﻿namespace GUI
 {
     partial class FrmEdiModelo
     {
@@ -35,6 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCod = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // comboMarca
@@ -100,6 +102,25 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(8, 218);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Código:";
+            // 
+            // txtCod
+            // 
+            this.txtCod.Location = new System.Drawing.Point(107, 218);
+            this.txtCod.Name = "txtCod";
+            this.txtCod.Size = new System.Drawing.Size(100, 20);
+            this.txtCod.TabIndex = 10;
+            // 
             // FrmEdiModelo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,6 +128,8 @@
             this.BackgroundImage = global::SistemaAutomotriz.Properties.Resources.MTS_950_DrapeBG_03_1600x1200;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(529, 358);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCod);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.label3);
@@ -131,5 +154,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox txtCod;
     }
 }

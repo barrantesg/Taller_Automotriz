@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidad
+namespace Entidades
 {
     public class Marca
     {
@@ -12,11 +12,11 @@ namespace Entidad
         private string codigoMarca;
 
         //constructores
-        public Marca( string codigoMarca, string descMarca)
+        public Marca(string codigoMarca, string descMarca)
         {
             this.CodigoMarca = codigoMarca;
             this.DescMarca = descMarca;
-            
+
         }
 
         public Marca(string descMarca)
@@ -24,27 +24,23 @@ namespace Entidad
             this.DescMarca = descMarca;
         }
 
-        public Marca()
-        {
-        }
-
         //get y set
         public string DescMarca
         {
-            get{return descMarca;}
-            set   {descMarca = value;}
+            get { return descMarca; }
+            set { descMarca = value; }
         }
 
         public string CodigoMarca
         {
-            get {return codigoMarca;}
-            set  {  codigoMarca = value;}
+            get { return codigoMarca; }
+            set { codigoMarca = value; }
         }
 
         //tostring
         public override string ToString()
         {
-            return this.codigoMarca + " " + this.descMarca;
+            return this.descMarca;
         }
     }
 }

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entidad;
 using Npgsql;
 using NpgsqlTypes;
 using System.Data;
+using Entidades;
 
-namespace Datos
+namespace DAO
 {
     public class ClienteD
     {
@@ -36,12 +36,12 @@ namespace Datos
             this.error = "";
             try
             {
-                string sql = "insert into cliente(cedula, nombre, apellidouno, apellidodos, teloficina, telcasa, telcelular, fax, direccion)" +
+                string sql = "insert into cliente(cedula, nombre, ape1, ape2, tel_ofi, tel_casa, cel, fax, direccion)" +
                     "values(@cedula, @nombre, @ape1, @ape2, @tel_ofi, @tel_casa, @cel, @fax, @direccion)";
 
                 NpgsqlParameter[] parametros = new NpgsqlParameter[9];
                 parametros[0] = new NpgsqlParameter();
-                parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                 parametros[0].ParameterName = "@cedula";
                 parametros[0].Value = pCliente.Ced;
 
@@ -91,7 +91,8 @@ namespace Datos
                     estado = false;
                     this.error = this.conexion.ErrorDescripcion;
                 }
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 estado = false;
                 this.error = e.Message;
@@ -114,7 +115,8 @@ namespace Datos
                     estado = false;
                     this.error = this.conexion.ErrorDescripcion;
                 }
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 estado = false;
                 this.error = e.Message;
@@ -123,17 +125,16 @@ namespace Datos
         }
 
         //EDITAR CLIENTES
-       public bool editarCliente(Cliente pCliente)
+        public bool editarCliente(Cliente pCliente)
         {
             bool estado = true;
             this.error = "";
             try
             {
-               
-                string sql = "update cliente set cedula=@cedula, nombre=@nombre, apellidouno=@ape1, apellidodos=@ape2, teloficina=@tel_ofi, telcasa=@tel_casa, telcelular=@cel,  fax =@fax, direccion =@direccion where cedula=@cedula";
+                string sql = "update cliente set cedula=@cedula, nombre=@nombre, ape1=@ape1, ape2=@ape2, tel_ofi=@tel_ofi, tel_casa=@tel_casa, cel=@cel,  fax =@fax, direccion =@direccion where cedula=@cedula";
                 NpgsqlParameter[] parametros = new NpgsqlParameter[9];
                 parametros[0] = new NpgsqlParameter();
-                parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                 parametros[0].ParameterName = "@cedula";
                 parametros[0].Value = pCliente.Ced;
 
@@ -183,7 +184,8 @@ namespace Datos
                     estado = false;
                     this.error = this.conexion.ErrorDescripcion;
                 }
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 estado = false;
                 this.error = e.Message;
@@ -202,7 +204,7 @@ namespace Datos
                 NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
                 parametros[0] = new NpgsqlParameter();
-                parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                 parametros[0].ParameterName = "@cedula";
                 parametros[0].Value = pCliente.Ced;
 
@@ -212,7 +214,8 @@ namespace Datos
                     estado = false;
                     this.error = this.conexion.ErrorDescripcion;
                 }
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 estado = false;
                 this.error = e.Message;

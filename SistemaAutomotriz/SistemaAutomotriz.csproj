@@ -53,19 +53,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\AccesoDatosPostgre.cs" />
+    <Compile Include="DAO\ClaseD.cs" />
     <Compile Include="DAO\ClienteD.cs" />
     <Compile Include="DAO\EmpleadoD.cs" />
     <Compile Include="DAO\MarcaD.cs" />
     <Compile Include="DAO\ModeloD.cs" />
+    <Compile Include="DAO\OrdenTrabajoD.cs" />
+    <Compile Include="DAO\Parametro.cs" />
     <Compile Include="DAO\PuestoD.cs" />
     <Compile Include="DAO\PuestoEmpleado.cs" />
     <Compile Include="DAO\ReparacionD.cs" />
+    <Compile Include="DAO\VehiculoD.cs" />
+    <Compile Include="Entidades\Clase.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Marca.cs" />
     <Compile Include="Entidades\Modelo.cs" />
     <Compile Include="Entidades\Puesto.cs" />
     <Compile Include="Entidades\Reparacion.cs" />
+    <Compile Include="Entidades\Vehiculo.cs" />
     <Compile Include="GUI\FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,12 @@
     </Compile>
     <Compile Include="GUI\FrmModelo.Designer.cs">
       <DependentUpon>FrmModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmOrdenTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmOrdenTrabajo.designer.cs">
+      <DependentUpon>FrmOrdenTrabajo.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\InicioSesion.cs">
       <SubType>Form</SubType>
@@ -185,6 +197,9 @@
     <EmbeddedResource Include="GUI\FrmModelo.resx">
       <DependentUpon>FrmModelo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmOrdenTrabajo.resx">
+      <DependentUpon>FrmOrdenTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +251,7 @@
     <Content Include="Resources\1486712585_trash_bin.png" />
     <Content Include="Resources\1486712785_user_profile_edit.png" />
     <Content Include="Resources\1486713005_add_user.png" />
+    <None Include="Resources\1489014322_run.ico" />
     <Content Include="Resources\1489014575_BT_c3tool.ico" />
     <Content Include="Resources\1489014601_BT_c3angle.ico" />
     <Content Include="Resources\1489017275_logout.ico" />
@@ -244,6 +260,7 @@
     <Content Include="Resources\1489291404_icon-136-document-edit.ico" />
     <Content Include="Resources\1489309838_circle-add-plus-new-glyph.ico" />
     <Content Include="Resources\1489309881_edit2.ico" />
+    <None Include="Resources\1489309881_edit21.ico" />
     <Content Include="Resources\1489455956_cancel.ico" />
     <Content Include="Resources\2_Jan-27-128-ConvertImage.ico" />
     <Content Include="Resources\405442_634x357.jpg" />
@@ -252,9 +269,11 @@
     <Content Include="Resources\bmw-car-sign-round-label-brand-auto-128.png" />
     <Content Include="Resources\Calebamesbury-Classic-American-Cars-Muscle-Car-Chevrolet-Camaro-SS.ico" />
     <Content Include="Resources\catalog-128-ConvertImage.ico" />
+    <None Include="Resources\circle-add-plus-new-glyph.ico" />
     <Content Include="Resources\clientes.png" />
     <Content Include="Resources\collage.jpg" />
     <Content Include="Resources\Daperton_Group_Alquila_con_confirmacion_de_Marca_y_modelo_de_vehiculo.png" />
+    <None Include="Resources\edit2.ico" />
     <Content Include="Resources\login-header.jpg" />
     <Content Include="Resources\MTS-950_DrapeBG_03_1600x1200.jpg" />
     <Content Include="Resources\spare-parts-engine-app-application-128.png" />

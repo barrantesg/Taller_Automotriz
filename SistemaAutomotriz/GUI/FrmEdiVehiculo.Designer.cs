@@ -1,4 +1,4 @@
-﻿namespace frmFramesProyecto.Vista
+﻿namespace GUI
 {
     partial class FrmEdiVehiculo
     {
@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEdiVehiculo));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtAño = new System.Windows.Forms.TextBox();
             this.txtMotor = new System.Windows.Forms.TextBox();
             this.comboModelo = new System.Windows.Forms.ComboBox();
             this.comboMarca = new System.Windows.Forms.ComboBox();
@@ -39,7 +40,6 @@
             this.txtCilindraje = new System.Windows.Forms.TextBox();
             this.txtChasis = new System.Windows.Forms.TextBox();
             this.comboClase = new System.Windows.Forms.ComboBox();
-            this.dateAño = new System.Windows.Forms.DateTimePicker();
             this.txtCapacidad = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -68,6 +68,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txtAño);
             this.groupBox1.Controls.Add(this.txtMotor);
             this.groupBox1.Controls.Add(this.comboModelo);
             this.groupBox1.Controls.Add(this.comboMarca);
@@ -77,7 +78,6 @@
             this.groupBox1.Controls.Add(this.txtCilindraje);
             this.groupBox1.Controls.Add(this.txtChasis);
             this.groupBox1.Controls.Add(this.comboClase);
-            this.groupBox1.Controls.Add(this.dateAño);
             this.groupBox1.Controls.Add(this.txtCapacidad);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
@@ -95,6 +95,13 @@
             this.groupBox1.Size = new System.Drawing.Size(352, 409);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // txtAño
+            // 
+            this.txtAño.Location = new System.Drawing.Point(145, 17);
+            this.txtAño.Name = "txtAño";
+            this.txtAño.Size = new System.Drawing.Size(201, 20);
+            this.txtAño.TabIndex = 23;
             // 
             // txtMotor
             // 
@@ -168,15 +175,6 @@
             this.comboClase.Name = "comboClase";
             this.comboClase.Size = new System.Drawing.Size(201, 21);
             this.comboClase.TabIndex = 13;
-            // 
-            // dateAño
-            // 
-            this.dateAño.CustomFormat = "yyyy";
-            this.dateAño.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateAño.Location = new System.Drawing.Point(145, 17);
-            this.dateAño.Name = "dateAño";
-            this.dateAño.Size = new System.Drawing.Size(201, 20);
-            this.dateAño.TabIndex = 12;
             // 
             // txtCapacidad
             // 
@@ -342,7 +340,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.Image = global::SistemaAutomotriz.Properties.Resources.edit2;
             this.btnEditar.Location = new System.Drawing.Point(286, 17);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(46, 39);
@@ -358,16 +356,18 @@
             this.btnEliminar.Size = new System.Drawing.Size(46, 39);
             this.btnEliminar.TabIndex = 1;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.Image = global::SistemaAutomotriz.Properties.Resources.circle_add_plus_new_glyph;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAgregar.Location = new System.Drawing.Point(20, 17);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(46, 39);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dtVehiculo
             // 
@@ -420,7 +420,6 @@
         public System.Windows.Forms.TextBox txtCilindraje;
         public System.Windows.Forms.TextBox txtChasis;
         public System.Windows.Forms.ComboBox comboClase;
-        public System.Windows.Forms.DateTimePicker dateAño;
         public System.Windows.Forms.TextBox txtCapacidad;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnEditar;
@@ -431,5 +430,6 @@
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.DataGridView dtVehiculo;
         public System.Windows.Forms.TextBox txtMotor;
+        public System.Windows.Forms.TextBox txtAño;
     }
 }

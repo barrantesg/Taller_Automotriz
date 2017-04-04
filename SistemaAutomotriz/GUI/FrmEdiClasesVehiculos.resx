@@ -124,16 +124,6 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnAgregar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVDhPjdM9igJBEIbhBhNhEVMRMfMQZgYmrn/JCt7C
-        xHuYiompgd5hMRA8xUbLgolgIMgi+n6DDj1tTeMHTzA11dVNM+OMlDHFDidc8YcNBoimiwNuEd+o4iVj
-        aDdrUegHmSENnGE1z4ya6CRpVrCaRCez6tKHK+HyKFhiA9ZwLa9giQ34hRt5BfkK1IJn/07+4T69giV2
-        giOSHayXT7EBWyTZw2qQ2IAJkvRgNUjeAF3gB9IsYDVadHltZFLAHNYCn36wIXLTgf7EcKE+9SXqeCsV
-        6JjarYkigjh3B+ZTrMCiO7qPAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA

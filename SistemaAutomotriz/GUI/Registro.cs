@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Datos;
-using Entidad;
+using Entidades;
 using SistemaAutomotriz.GUI;
+using DAO;
 
-namespace frmFramesProyecto.Vista
+namespace GUI
 {
     public partial class FrmRegistro : Form
     {

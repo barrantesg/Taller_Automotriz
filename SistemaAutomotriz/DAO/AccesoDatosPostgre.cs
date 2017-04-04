@@ -8,7 +8,7 @@ using Npgsql;//Para controlar la conexion a base de datos con postgresql
 using NpgsqlTypes;
 using System.Windows.Forms;
 
-namespace Datos
+namespace DAO
 {
     public class AccesoDatosPostgre
     {
