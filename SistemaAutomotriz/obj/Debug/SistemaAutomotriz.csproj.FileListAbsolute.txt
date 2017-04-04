@@ -24,3 +24,6 @@ C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\bin\Debug\Npgs
 C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.exe
 C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.pdb
 C:\Users\Dayánn BG\Documents\SistemaAutomotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.csprojResolveAssemblyReference.cache
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\bin\Debug\SistemaAutomotriz.exe.config
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.exe
+C:\Users\VERDUGO\Source\Repos\NewRepo\Taller_Automotriz\SistemaAutomotriz\obj\Debug\SistemaAutomotriz.pdb

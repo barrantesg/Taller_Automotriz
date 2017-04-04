@@ -33,9 +33,7 @@ namespace SistemaAutomotriz
             //{
            
                 Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDef
-                
-                ault(false);
+                Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new TablaEmpleados());
 
 
