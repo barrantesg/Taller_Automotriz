@@ -24,6 +24,12 @@ namespace SistemaAutomotriz.GUI
             this.refrescarGrid();
            
         }
+        public TablaEmpleados()
+        {
+             InitializeComponent();
+            this.refrescarGrid();
+        }
+
 
 
         private void tpNuevo_Click(object sender, EventArgs e)
